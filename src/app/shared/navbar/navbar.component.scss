@@ -1,0 +1,149 @@
+
+.sidenav{
+  background-color: #013E66;
+  // width: 275px;
+  // width: 20%;
+  height: 100%;
+  
+
+  .logo{
+    display: block;
+    padding-top: 10px;
+    padding-left: 40px;
+    height: 40px;
+  }
+  .menu{
+    padding-left: 40px;
+    padding-top: 30px;
+    color:white;
+    opacity: 0.7;
+    font-size: 14px;
+  }
+  .nav_bar{
+  padding-left: 20px;
+  padding-top: 10px;
+    .nav_button{
+      width : 220px; height:44px; font-weight: bold; color: white; font-size: 16px;
+      padding-right: 120px;
+      background-color: transparent;
+      opacity: 0.75;
+      margin-top: 10px;
+    }
+    #nav-icon{
+      margin-right: 10px;
+      margin-bottom: 2px;
+    }
+    .tab1,.tab2,.tab3,.tab4{
+      background:  linear-gradient(180deg, #FFFFFF 0%, #E6E6E6 100%);
+      color: #013E66;
+      opacity: 1.0;
+    }
+   .active{
+       background:  linear-gradient(180deg, #FFFFFF 0%, #E6E6E6 100%);
+       color: #013E66;
+       opacity: 1.0;
+       font-weight: bold;
+    }
+  }
+  .footer_logo{
+    margin-top: 80%;
+  }
+}
+
+.toolbar{
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  // position: absolute;
+  // z-index: 999;
+  width: 100%;
+  .toolbartext{
+    font-size: 16px;
+    font-weight: bold;
+    color: #386FA4;
+  }
+  .manomay-color{
+    // display: flex;
+    // position: absolute;
+    // left:50%;
+    // margin-right: auto;
+    width: 10%;
+  }
+  .profile-icon{
+      color: #386FA4;
+      // position: absolute;
+      // margin-top: -2px;
+
+      // left: 95%;
+      // margin-right: 2%;
+  }
+  .user-greeting{
+      // left: 85%;
+      // position: absolute;
+      font-size: 14px;
+      /* font-weight: bold; */
+      margin-right:5%;
+      /* margin-right: -12%; */
+      color: #666666;
+  }
+  .menu-icon{
+    margin-top: -2px;
+    color: #386FA4;
+  }
+  .matmenu{
+    .menu_logout{color: #F23E3E;
+    }
+
+    .menu_seg{
+        color: #999999;
+        border-bottom: 1px solid #CCCCCC;
+    }
+  }
+
+}
+.drawer{
+  background-color: #013E66;
+  // width: 60%;
+
+  .logo{
+    display: block;
+    padding-top: 10px;
+    padding-left: 40px;
+    height: 40px;
+  }
+  .menu{
+    padding-left: 40px;
+    padding-top: 30px;
+    color:white;
+    opacity: 0.7;
+    font-size: 14px;
+  }
+  .nav_bar{
+  padding-left: 20px;
+  padding-top: 10px;
+    .nav_button{
+      width : 220px; height:44px; font-weight: bold; color: white; font-size: 16px;
+      padding-right: 120px;
+      background-color: transparent;
+      opacity: 0.75;
+      margin-top: 10px;
+    }
+    #nav-icon{
+      margin-right: 10px;
+      margin-bottom: 2px;
+    }
+    .tab1,.tab2,.tab3,.tab4{
+      background:  linear-gradient(180deg, #FFFFFF 0%, #E6E6E6 100%);
+      color: #013E66;
+      opacity: 1.0;
+    }
+   .active{
+       background:  linear-gradient(180deg, #FFFFFF 0%, #E6E6E6 100%);
+       color: #013E66;
+       opacity: 1.0;
+       font-weight: bold;
+    }
+  }
+  .footer_logo{
+    margin-top: 70%;
+  }
+}

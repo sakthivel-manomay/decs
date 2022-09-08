@@ -1,0 +1,84 @@
+<div fxLayout="row" fxFlex="100">
+<div fxLayout="row" fxFlex="20" fxFlex.lg="20" fxFlex.md="20" fxFlex.sm="35" fxFlex.xs="0" >
+  <!-- Sidenav  -->
+  <mat-sidenav class="sidenav" opened mode="side" fxHide.lt-sm fxFlex="20" fxFlex.lg="20" fxFlex.md="25" fxFlex.sm="35">
+        <img class="logo" src="../assets/logo2.png">
+        <p class="menu">MENU</p>
+        <div class="nav_bar">
+        <button class="nav_button" mat-button (click)="onClick(1); toolbar(1);"   [ngClass]="{'active': tab==='tab1'}">
+        <span class="material-icons" id="nav-icon" style="font-size: 22px;">dashboard</span>
+        Dashboard</button>
+        <button class="nav_button" mat-button (click)="onClick(2) ; toolbar(2);"   [ngClass]="{'active': tab==='tab2'}">
+            <span class="material-icons" id="nav-icon" style="font-size: 22px;">verified_user</span>
+            Approval</button>
+        <button class="nav_button" mat-button (click)="onClick(3) ; toolbar(3);"   [ngClass]="{'active': tab==='tab3'}">
+            <span class="material-icons" id="nav-icon" style="font-size: 22px;">history</span>
+            History</button>
+        <button class="nav_button" mat-button (click)="onClick(4) ; toolbar(4);"   [ngClass]="{'active': tab==='tab4'}">
+            <span class="material-icons" id="nav-icon" style="font-size: 22px;">group</span>
+            User Management</button>
+        </div>
+        <div fxLayout="column" fxLayoutAlign="space-around center">
+          <img class="footer_logo" src="../assets/footer_logo.png" alt="">
+        </div>
+    </mat-sidenav>
+</div>
+
+  <!-- Toolbar and Profile -->
+<div fxLayout="row" fxFlex="80" fxFlex.lg="80" fxFlex.md="95"fxLayoutAlign.md="end center" fxFlex.sm="100" fxFlex.xs="100">
+  <mat-toolbar class="toolbar" fxFlex.lg="100" fxFlex.md="95" fxLayoutAlign.md="end center" fxFlex.sm="100" fxFlex.xs="100">
+    <div fxFlex.xs="5" fxFlexOffset.xs="-4">
+    <button class="menu-icon" mat-icon-button (click)="sidenavbar.toggle()" fxShow="true"  fxHide.gt-xs>
+    <mat-icon >menu</mat-icon>
+    </button>
+    </div>
+
+    <div fxLayout="row" fxFlex="100" fxLayoutAlign="space-around center">
+    <span fxFlex='40' fxFlex.xs="30" fxFlexOffset.xs="5" class="toolbartext">{{title}}</span>
+    <div class="manomay-color" fxLayout="row" fxFlex="40" fxFlexOffset="0" fxFlex.xs="10">
+    <img src="../assets/Manomay-color.png" fxHide.lt-md>
+    </div>
+
+    <div fxLayout="row" fxFlex.lg="12" fxFlex.xs="50" fxFlex.sm="30" fxFlexOffset.xs="0" fxFlexOffset.lg="0" fxLayoutAlign="end center" >
+    <h6 class="user-greeting">Hi Manomay!</h6>
+    <button class="profile-icon" mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon >account_circle</mat-icon>
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
+    </div>
+
+      <mat-menu class="matmenu" #menu="matMenu">
+          <button class="menu_seg" style="color: #999999; border-bottom: 1px solid #CCCCCC;" mat-menu-item>User : Manomay</button>
+          <button class="menu_seg" style="color: #999999; border-bottom: 1px solid #CCCCCC;" mat-menu-item>Role : Admin</button>
+          <button class="menu_logout" style="color: #F23E3E;" mat-menu-item (click)="logout()">Logout</button>
+      </mat-menu>
+    </div>
+  </mat-toolbar>
+</div>
+</div>
+  <!-- Side Nav for Mobile Responsive -->
+  <mat-drawer class="drawer" fxLayout="row" fxFlex.xs="70" #sidenavbar fxHide.gt-xs>
+    <img class="logo" src="../assets/logo2.png">
+    <p class="menu">MENU<span>
+    <button style="margin-left:45%;" mat-icon-button (click)="sidenavbar.toggle()" fxShow="true" fxHide.gt-xs>
+        <mat-icon >close</mat-icon>
+    </button>
+    </span></p>
+    <div class="nav_bar">
+        <button class="nav_button" mat-button (click)="onClick(1); toolbar(1);"   [ngClass]="{'active': tab==='tab1'}">
+        <span class="material-icons" id="nav-icon" style="font-size: 22px;">dashboard</span>
+        Dashboard</button>
+        <button class="nav_button" mat-button (click)="onClick(2); toolbar(2);"   [ngClass]="{'active': tab==='tab2'}">
+            <span class="material-icons" id="nav-icon" style="font-size: 22px;">verified_user</span>
+            Approval</button>
+        <button class="nav_button" mat-button (click)="onClick(3); toolbar(3);"   [ngClass]="{'active': tab==='tab3'}">
+            <span class="material-icons" id="nav-icon" style="font-size: 22px;">history</span>
+            History</button>
+        <button class="nav_button" mat-button (click)="onClick(4); toolbar(4);"   [ngClass]="{'active': tab==='tab4'}">
+            <span class="material-icons" id="nav-icon" style="font-size: 22px;">group</span>
+            User Management</button>
+    </div>
+    <div fxLayout="column" fxLayoutAlign="end center" >
+      <img class="footer_logo" src="../assets/footer_logo.png" alt="">
+    </div>
+  </mat-drawer>
